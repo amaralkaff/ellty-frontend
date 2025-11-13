@@ -17,20 +17,23 @@ document.addEventListener('DOMContentLoaded', function() {
         // All pages checkbox click handler
         if (allPagesCheckbox) {
             allPagesCheckbox.addEventListener('click', function() {
-                const isAllChecked = allPagesCheckbox.classList.contains('checked');
+                // Use setTimeout to check state after the click event completes
+                setTimeout(() => {
+                    const isAllChecked = allPagesCheckbox.classList.contains('checked');
 
-                // Toggle all page checkboxes to match "All pages" state
-                pageCheckboxes.forEach(checkbox => {
-                    if (isAllChecked) {
-                        checkbox.classList.add('checked');
-                        checkbox.classList.remove('unchecking', 'variant9');
-                        checkbox.removeAttribute('style');
-                    } else {
-                        checkbox.classList.remove('checked');
-                        checkbox.classList.add('variant9');
-                        checkbox.removeAttribute('style');
-                    }
-                });
+                    // Toggle all page checkboxes to match "All pages" state
+                    pageCheckboxes.forEach(checkbox => {
+                        if (isAllChecked) {
+                            checkbox.classList.add('checked');
+                            checkbox.classList.remove('unchecking', 'variant9');
+                            checkbox.removeAttribute('style');
+                        } else {
+                            checkbox.classList.remove('checked');
+                            checkbox.classList.add('variant9');
+                            checkbox.removeAttribute('style');
+                        }
+                    });
+                }, 10);
             });
         }
 
