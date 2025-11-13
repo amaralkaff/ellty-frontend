@@ -20,12 +20,21 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 60px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Component Section Styles */
 .component-section {
     margin-bottom: 80px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .component-title {
@@ -34,6 +43,8 @@ body {
     font-weight: 600;
     color: #1F2128;
     margin-bottom: 8px;
+    text-align: center;
+    width: 100%;
 }
 
 .component-description {
@@ -41,8 +52,10 @@ body {
     font-size: 14px;
     font-weight: 400;
     color: #86868B;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     line-height: 130%;
+    text-align: center;
+    width: 100%;
 }
 
 /* Variants Display Styles */
@@ -83,17 +96,17 @@ body {
 
 /* Pages Card Component - Combined Component */
 .pages-card {
-    width: 370px;
-    height: 326px;
+    width: 600px;
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    border-radius: 6px;
-    padding: 10px 0;
+    border: none;
+    border-radius: 12px;
+    padding: 30px;
     box-shadow: 0px 8px 15px 0px rgba(20, 20, 20, 0.12), 0px 0px 4px 0px rgba(20, 20, 20, 0.04);
     opacity: 1;
     display: flex;
     flex-direction: column;
     gap: 0;
+    margin: 0 auto;
 }
 
 .pages-card .home-component {
@@ -102,12 +115,16 @@ body {
     background: transparent;
     border-radius: 0;
     margin-bottom: 0;
-    padding: 8px 22px 8px 22px;
+    padding: 16px 0;
 }
 
 .pages-card .btn-default {
-    width: calc(100% - 40px);
-    margin: 10px 20px 0 20px;
+    width: 100%;
+    margin: 20px 0 0 0;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
 }
 
 .divider {
