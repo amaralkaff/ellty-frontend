@@ -39,21 +39,28 @@ body {
 
 .component-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
     color: #1F2128;
     margin-bottom: 8px;
     text-align: center;
     width: 100%;
+    line-height: 130%;
+    letter-spacing: 0px;
+    vertical-align: middle;
 }
 
 .component-description {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
+    font-style: normal;
     color: #86868B;
     margin-bottom: 30px;
     line-height: 130%;
+    letter-spacing: 0px;
+    vertical-align: middle;
     text-align: center;
     width: 100%;
 }
@@ -61,11 +68,15 @@ body {
 /* Variants Display Styles */
 .variants-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
     color: #1F2128;
     margin-top: 40px;
     margin-bottom: 20px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    vertical-align: middle;
 }
 
 .variants-container {
@@ -82,10 +93,13 @@ body {
 
 .variant-label {
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
     color: #86868B;
     line-height: 130%;
+    letter-spacing: 0px;
+    vertical-align: middle;
 }
 
 /* Static variants - no interaction */
@@ -123,8 +137,8 @@ body {
     width: 100%;
     margin: 24px 0 0 0;
     height: 52px;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     border-radius: 10px;
 }
 
@@ -152,12 +166,12 @@ body {
 
 .home-label {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     font-style: normal;
     color: #1F2128;
-    line-height: 140%;
-    letter-spacing: -0.01em;
+    line-height: 130%;
+    letter-spacing: 0px;
     vertical-align: middle;
 }
 
@@ -251,11 +265,12 @@ body {
     /* Typography */
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     color: #1F2128;
     text-align: center;
     line-height: 130%;
     letter-spacing: 0px;
+    vertical-align: middle;
 
     /* Interaction */
     cursor: pointer;
