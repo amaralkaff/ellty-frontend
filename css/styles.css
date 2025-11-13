@@ -53,8 +53,9 @@ body {
 
 /* Hover State - Variant2 */
 .btn-default:hover {
-    /* Add hover state properties here when Variant2 specs are available */
-    opacity: 0.9;
+    background: #FFD84D;
+    opacity: 1;
+    transition: all 0ms; /* Instant animation as per Figma specs */
 }
 
 /* Active/Focus States */
