@@ -14,7 +14,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.6;
-    background: #F5F5F7;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e9ecf0 100%);
 }
 
 .container {
@@ -96,13 +96,13 @@ body {
 
 /* Pages Card Component - Combined Component */
 .pages-card {
-    width: 370px;
-    height: 326px;
+    width: 540px;
+    min-height: 440px;
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    border-radius: 6px;
-    padding: 10px 0;
-    box-shadow: 0px 8px 15px 0px rgba(20, 20, 20, 0.12), 0px 0px 4px 0px rgba(20, 20, 20, 0.04);
+    border: none;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0px 20px 40px 0px rgba(20, 20, 20, 0.08), 0px 2px 8px 0px rgba(20, 20, 20, 0.04);
     opacity: 1;
     display: flex;
     flex-direction: column;
@@ -116,23 +116,23 @@ body {
     background: transparent;
     border-radius: 0;
     margin-bottom: 0;
-    padding: 8px 22px 8px 22px;
+    padding: 18px 0;
 }
 
 .pages-card .btn-default {
-    width: calc(100% - 40px);
-    margin: 10px 20px 0 20px;
-    height: 40px;
-    font-size: 14px;
+    width: 100%;
+    margin: 24px 0 0 0;
+    height: 52px;
+    font-size: 15px;
     font-weight: 500;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 .divider {
     width: 100%;
     height: 1px;
-    background: #EEEEEE;
-    margin: 0;
+    background: #F0F0F0;
+    margin: 8px 0;
 }
 
 /* Home Component - Pixel Perfect from Figma */
@@ -152,12 +152,12 @@ body {
 
 .home-label {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     font-style: normal;
     color: #1F2128;
-    line-height: 130%;
-    letter-spacing: 0px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
     vertical-align: middle;
 }
 
