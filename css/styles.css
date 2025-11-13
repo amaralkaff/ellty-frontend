@@ -20,14 +20,16 @@ body {
     padding: 20px;
 }
 
-/* Desktop Variant Component - Pixel Perfect from Figma */
+/* Checkbox Component - Pixel Perfect from Figma */
 .desktop-variant {
     /* Dimensions */
     width: 25px;
     height: 25px;
+    position: relative;
 
-    /* Visual Properties */
+    /* Visual Properties - Default (Variant1) */
     background: #FFFFFF;
+    border: 2px solid #D1D1D6;
     border-radius: 6px;
     opacity: 1;
 
@@ -38,13 +40,64 @@ body {
     cursor: pointer;
     transition: all 0ms; /* Instant animation as per Figma specs */
 
-    /* Position (from Figma specs) */
+    /* Position */
     margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Hover State - Variant2 (waiting for specs) */
-.desktop-variant:hover {
-    /* Add hover state properties here when Variant2 specs are available */
+/* Checkmark Icon */
+.desktop-variant::after {
+    content: '';
+    position: absolute;
+    display: none;
+    width: 6px;
+    height: 10px;
+    border: solid #FFFFFF;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    top: 4px;
+    left: 8px;
+}
+
+/* Variant2 - Hover Unchecked (gray checkmark) */
+.desktop-variant:hover::after {
+    display: block;
+    border-color: #D1D1D6;
+}
+
+/* Variant3 - Pressed Unchecked (gray checkmark) */
+.desktop-variant:active::after {
+    display: block;
+    border-color: #D1D1D6;
+}
+
+/* Variant4-7 - Checked States (blue background, white checkmark) */
+.desktop-variant.checked {
+    background: #4285F4;
+    border-color: #4285F4;
+}
+
+.desktop-variant.checked::after {
+    display: block;
+    border-color: #FFFFFF;
+}
+
+/* Variant8 - Unchecking Hover (gray checkmark on white) */
+.desktop-variant.unchecking:hover::after {
+    display: block;
+    border-color: #D1D1D6;
+}
+
+/* Variant9 - Back to Default (empty) */
+.desktop-variant.variant9 {
+    background: #FFFFFF;
+    border: 2px solid #D1D1D6;
+}
+
+.desktop-variant.variant9::after {
+    display: none;
 }
 
 /* Button Component Styles - Pixel Perfect from Figma */
