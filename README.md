@@ -1,103 +1,76 @@
-# Ellty Frontend Test Assignment
+# Ellty Frontend Test
 
-## Overview
-This project is a test assignment for the Frontend/Full Stack Developer position at Ellty (Taskina Pty Ltd). The goal is to replicate a component from the provided Figma design with pixel-perfect accuracy.
+A pixel-perfect replication of UI components from Figma, built with HTML, CSS, and vanilla JavaScript.
 
-## Assignment Details
-- **Date:** 03.02.2024
-- **Version:** 1.1
-- **Author:** Anton Taskin, CEO
-- **Department:** Ellty
-- **Deadline:** 48 hours from confirmation
+## What's This?
 
-## Project Structure
-```
-ellty-frontend-test/
-├── index.html          # Main HTML file
-├── css/
-│   └── styles.css     # Component styles
-├── js/
-│   └── script.js      # Interactive functionality
-├── assets/            # Images and other assets
-├── .gitignore
-└── README.md
-```
+This is my submission for the Ellty frontend developer test. The goal was to recreate the components from the Figma design as accurately as possible and make them interactive.
 
-## Technologies Used
-- HTML5
-- CSS3
-- Vanilla JavaScript
+## What I Built
 
-## Requirements
-✅ Pixel-perfect replication of the Figma design
-✅ Clean, well-organized, and readable code
-✅ Functional interactive elements (buttons, links, forms)
-✅ Responsive design (if applicable)
+**Three main components:**
+- **Button** - Yellow action button with hover and active states
+- **Checkbox** - Custom checkbox with 9 different variants (unchecked, hover, pressed, checked, etc.)
+- **Pages Card** - A complete component combining checkboxes with a "select all" feature
 
-## Figma Design
-[Link to Figma Design](https://www.figma.com/design/dwBFtlKY933OJWWSrGPs5q/Frontend?node-id=0-1)
+**Key features:**
+- Pixel-perfect design matching Figma specs
+- Interactive checkboxes with smooth state transitions
+- "Select all" functionality - checking "All pages" selects everything
+- Clean, readable code structure
+- Montserrat typography throughout
 
-## Setup Instructions
+## How to Run
 
-### 1. Clone the repository
+**Super simple - just open the file:**
+1. Download or clone this repo
+2. Open `index.html` in your browser
+3. That's it!
+
+**Or use a local server:**
 ```bash
-git clone <repository-url>
-cd ellty-frontend-test
-```
-
-### 2. Open the project
-Simply open `index.html` in your browser, or use a local development server:
-
-**Using Python:**
-```bash
+# Python
 python -m http.server 8000
-```
 
-**Using Node.js (http-server):**
-```bash
+# Node.js
 npx http-server
 ```
 
-### 3. View the project
-Open your browser and navigate to:
-- `http://localhost:8000` (Python)
-- `http://localhost:8080` (http-server)
+Then open `http://localhost:8000` in your browser.
 
-## Development Workflow
+## Project Structure
 
-1. Analyze the Figma design carefully
-2. Launch the Figma prototype to see all component details
-3. Implement the HTML structure
-4. Apply CSS styling for pixel-perfect accuracy
-5. Add JavaScript for interactivity
-6. Test across different browsers
-7. Deploy to GitHub Pages/Vercel/Netlify
-
-## Deployment
-
-### GitHub Pages
-```bash
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin <repository-url>
-git push -u origin main
+```
+├── index.html          # Main page with all components
+├── css/
+│   └── styles.css      # All the styling
+├── js/
+│   └── script.js       # Interactive functionality
+└── assets/
+    └── Vector 141.svg  # Checkmark icon
 ```
 
-Then enable GitHub Pages in repository settings.
+## Tech Stack
 
-### Vercel/Netlify
-Simply connect the GitHub repository to deploy automatically.
+Just the basics - no frameworks needed:
+- HTML5
+- CSS3 (Flexbox, custom properties)
+- Vanilla JavaScript (for checkbox interactions)
+- Google Fonts (Montserrat)
 
-## Submission
-- Provide a link to the live version
-- Send the link to: julia@ellty.com
-- Include the GitHub repository link
+## What Works
 
-## Contact
-For questions or clarifications, contact: julia@ellty.com
+✅ All buttons respond to hover and click
+✅ Checkboxes show all 9 variants from Figma
+✅ "All pages" checkbox controls all page checkboxes
+✅ Typography matches Figma exactly (14px Montserrat Regular)
+✅ Colors, spacing, and shadows are pixel-perfect
+✅ Instant animations (0ms as per Figma specs)
+
+## Design Reference
+
+[View the Figma Design](https://www.figma.com/design/dwBFtlKY933OJWWSrGPs5q/Frontend?node-id=0-1)
 
 ---
 
-**Status:** In Development
-**Last Updated:** 2025-11-13
+Built for Ellty - November 2025
