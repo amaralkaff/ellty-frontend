@@ -5,8 +5,10 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -27,24 +29,28 @@ body {
 }
 
 .component-title {
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 600;
-    color: #1D1D1F;
+    color: #1F2128;
     margin-bottom: 8px;
 }
 
 .component-description {
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    font-weight: 400;
     color: #86868B;
     margin-bottom: 20px;
-    line-height: 1.5;
+    line-height: 130%;
 }
 
 /* Variants Display Styles */
 .variants-title {
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 600;
-    color: #1D1D1F;
+    color: #1F2128;
     margin-top: 40px;
     margin-bottom: 20px;
 }
@@ -62,9 +68,11 @@ body {
 }
 
 .variant-label {
+    font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     font-weight: 500;
     color: #86868B;
+    line-height: 130%;
 }
 
 /* Static variants - no interaction */
@@ -125,10 +133,14 @@ body {
 }
 
 .home-label {
-    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
     font-weight: 400;
-    color: #1D1D1F;
-    line-height: 1.5;
+    font-style: normal;
+    color: #1F2128;
+    line-height: 130%;
+    letter-spacing: 0px;
+    vertical-align: middle;
 }
 
 .home-component .desktop-variant {
@@ -219,11 +231,13 @@ body {
     opacity: 1;
 
     /* Typography */
-    font-family: inherit;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 500;
-    color: #000000;
+    color: #1F2128;
     text-align: center;
+    line-height: 130%;
+    letter-spacing: 0px;
 
     /* Interaction */
     cursor: pointer;
