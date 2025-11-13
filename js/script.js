@@ -7,36 +7,30 @@ document.addEventListener('DOMContentLoaded', function() {
     const checkboxes = document.querySelectorAll('.desktop-variant');
 
     checkboxes.forEach((checkbox, index) => {
-        // Check if checkbox is in home component
-        const isInHomeComponent = checkbox.closest('.home-component');
+        let isChecked = checkbox.classList.contains('checked');
 
-        // Only add interactive handlers for home component checkboxes
-        if (isInHomeComponent) {
-            let isChecked = checkbox.classList.contains('checked');
+        // Click handler - Toggle between checked/unchecked
+        checkbox.addEventListener('click', function() {
+            isChecked = !isChecked;
 
-            // Click handler - Toggle between checked/unchecked
-            checkbox.addEventListener('click', function() {
-                isChecked = !isChecked;
+            if (isChecked) {
+                // Variant4 - Checked state
+                checkbox.classList.add('checked');
+                checkbox.classList.remove('unchecking', 'variant9');
+                checkbox.removeAttribute('style');
+            } else {
+                // Variant8/9 - Unchecked state
+                checkbox.classList.remove('checked');
+                checkbox.classList.add('unchecking');
 
-                if (isChecked) {
-                    // Variant4 - Checked state
-                    checkbox.classList.add('checked');
-                    checkbox.classList.remove('unchecking', 'variant9');
+                // Transition to Variant9 after a brief moment
+                setTimeout(() => {
+                    checkbox.classList.remove('unchecking');
+                    checkbox.classList.add('variant9');
                     checkbox.removeAttribute('style');
-                } else {
-                    // Variant8/9 - Unchecked state
-                    checkbox.classList.remove('checked');
-                    checkbox.classList.add('unchecking');
-
-                    // Transition to Variant9 after a brief moment
-                    setTimeout(() => {
-                        checkbox.classList.remove('unchecking');
-                        checkbox.classList.add('variant9');
-                        checkbox.removeAttribute('style');
-                    }, 100);
-                }
-            });
-        }
+                }, 100);
+            }
+        });
     });
 
     console.log(`Checkbox state machine initialized for ${checkboxes.length} checkboxes`);
