@@ -20,6 +20,33 @@ body {
     padding: 20px;
 }
 
+/* Desktop Variant Component - Pixel Perfect from Figma */
+.desktop-variant {
+    /* Dimensions */
+    width: 25px;
+    height: 25px;
+
+    /* Visual Properties */
+    background: #FFFFFF;
+    border-radius: 6px;
+    opacity: 1;
+
+    /* Transform */
+    transform: rotate(0deg);
+
+    /* Interaction */
+    cursor: pointer;
+    transition: all 0ms; /* Instant animation as per Figma specs */
+
+    /* Position (from Figma specs) */
+    margin-bottom: 20px;
+}
+
+/* Hover State - Variant2 (waiting for specs) */
+.desktop-variant:hover {
+    /* Add hover state properties here when Variant2 specs are available */
+}
+
 /* Button Component Styles - Pixel Perfect from Figma */
 .btn-default {
     /* Dimensions */
