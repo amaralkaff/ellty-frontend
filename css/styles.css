@@ -71,15 +71,14 @@ body {
     content: '';
     position: absolute;
     display: none;
-    width: 6px;
-    height: 10px;
-    border: solid #FFFFFF;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-    top: 50%;
-    left: 50%;
-    margin-top: -6px;
-    margin-left: -3px;
+    width: 10px;
+    height: 6px;
+    border: 1px solid #FFFFFF;
+    border-width: 0 0 2px 2px;
+    transform: rotate(-45deg);
+    top: 6px;
+    left: 6px;
+    opacity: 1;
 }
 
 /* Variant2 - Hover Unchecked (gray checkmark) */
@@ -96,8 +95,8 @@ body {
 
 /* Variant4-7 - Checked States (blue background, white checkmark) */
 .desktop-variant.checked {
-    background: #4285F4;
-    border-color: #4285F4;
+    background: #5087F8;
+    border-color: #5087F8;
 }
 
 .desktop-variant.checked::after {
