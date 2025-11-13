@@ -58,9 +58,11 @@ body {
     transition: all 0ms; /* Instant animation as per Figma specs */
 }
 
-/* Active/Focus States */
+/* Active/Pressed State - Variant3 */
 .btn-default:active {
-    transform: scale(0.98);
+    background: #FFCE22;
+    opacity: 1;
+    transition: all 0ms; /* Instant animation */
 }
 
 .btn-default:focus {
