@@ -4,44 +4,40 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Ellty Frontend Test - Component Loaded');
 
-    const checkbox = document.querySelector('.desktop-variant');
-    let isChecked = true; // Start in checked state to match Figma image
+    const checkboxes = document.querySelectorAll('.desktop-variant');
 
-    // Click handler - Toggle between checked/unchecked
-    checkbox.addEventListener('click', function() {
-        isChecked = !isChecked;
+    checkboxes.forEach((checkbox, index) => {
+        // Check if checkbox is in home component
+        const isInHomeComponent = checkbox.closest('.home-component');
 
-        if (isChecked) {
-            // Variant4 - Checked state
-            checkbox.classList.add('checked');
-            checkbox.classList.remove('unchecking', 'variant9');
-        } else {
-            // Variant8/9 - Unchecked state
-            checkbox.classList.remove('checked');
-            checkbox.classList.add('unchecking');
+        // Only add interactive handlers for home component checkboxes
+        if (isInHomeComponent) {
+            let isChecked = checkbox.classList.contains('checked');
 
-            // Transition to Variant9 after a brief moment
-            setTimeout(() => {
-                checkbox.classList.remove('unchecking');
-                checkbox.classList.add('variant9');
-            }, 100);
+            // Click handler - Toggle between checked/unchecked
+            checkbox.addEventListener('click', function() {
+                isChecked = !isChecked;
+
+                if (isChecked) {
+                    // Variant4 - Checked state
+                    checkbox.classList.add('checked');
+                    checkbox.classList.remove('unchecking', 'variant9');
+                    checkbox.removeAttribute('style');
+                } else {
+                    // Variant8/9 - Unchecked state
+                    checkbox.classList.remove('checked');
+                    checkbox.classList.add('unchecking');
+
+                    // Transition to Variant9 after a brief moment
+                    setTimeout(() => {
+                        checkbox.classList.remove('unchecking');
+                        checkbox.classList.add('variant9');
+                        checkbox.removeAttribute('style');
+                    }, 100);
+                }
+            });
         }
     });
 
-    // Mouse enter/leave for state transitions
-    checkbox.addEventListener('mouseenter', function() {
-        if (!isChecked) {
-            // Variant2 - Hover on unchecked (CSS handles this with :hover)
-        } else {
-            // Variant5/6 - Hover on checked
-        }
-    });
-
-    checkbox.addEventListener('mouseleave', function() {
-        if (isChecked) {
-            // Variant5 - Mouse outside while checked
-        }
-    });
-
-    console.log('Checkbox state machine initialized');
+    console.log(`Checkbox state machine initialized for ${checkboxes.length} checkboxes`);
 });

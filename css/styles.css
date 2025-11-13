@@ -39,6 +39,32 @@ body {
     line-height: 1.5;
 }
 
+/* Home Component - Pixel Perfect from Figma */
+.home-component {
+    width: 370px;
+    height: 42px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 8px 15px 8px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: all 0ms;
+    opacity: 1;
+}
+
+.home-label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1D1D1F;
+    line-height: 1.5;
+}
+
+.home-component .desktop-variant {
+    margin-bottom: 0;
+}
+
 /* Checkbox Component - Pixel Perfect from Figma */
 .desktop-variant {
     /* Dimensions */
