@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Ellty Frontend Test - Component Loaded');
 
     const checkbox = document.querySelector('.desktop-variant');
-    let isChecked = false;
+    let isChecked = true; // Start in checked state to match Figma image
 
     // Click handler - Toggle between checked/unchecked
     checkbox.addEventListener('click', function() {
