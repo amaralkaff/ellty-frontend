@@ -23,7 +23,7 @@ body {
 
 /* Component Section Styles */
 .component-section {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 .component-title {
@@ -38,6 +38,39 @@ body {
     color: #86868B;
     margin-bottom: 20px;
     line-height: 1.5;
+}
+
+/* Variants Display Styles */
+.variants-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1D1D1F;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.variants-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.variant-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.variant-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #86868B;
+}
+
+/* Static variants - no interaction */
+.static {
+    pointer-events: none;
+    cursor: default;
 }
 
 /* Home Component - Pixel Perfect from Figma */

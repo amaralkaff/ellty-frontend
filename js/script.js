@@ -4,7 +4,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Ellty Frontend Test - Component Loaded');
 
-    const checkboxes = document.querySelectorAll('.desktop-variant');
+    // Select only interactive checkboxes (not static variants)
+    const checkboxes = document.querySelectorAll('.desktop-variant:not(.static)');
 
     checkboxes.forEach((checkbox, index) => {
         let isChecked = checkbox.classList.contains('checked');
@@ -33,5 +34,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    console.log(`Checkbox state machine initialized for ${checkboxes.length} checkboxes`);
+    console.log(`Interactive checkboxes initialized: ${checkboxes.length}`);
 });
