@@ -73,6 +73,40 @@ body {
     cursor: default;
 }
 
+/* Pages Card Component - Combined Component */
+.pages-card {
+    width: 370px;
+    height: 326px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 6px;
+    padding: 10px 0;
+    box-shadow: 0px 8px 15px 0px rgba(20, 20, 20, 0.12), 0px 0px 4px 0px rgba(20, 20, 20, 0.04);
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pages-card .home-component {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.pages-card .btn-default {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+}
+
+.divider {
+    width: calc(100% - 40px);
+    height: 1px;
+    background: #EEEEEE;
+    margin: 0 20px;
+}
+
 /* Home Component - Pixel Perfect from Figma */
 .home-component {
     width: 370px;
